@@ -25,35 +25,41 @@
   </div>
 </div>
 
+<div class="card-container">
+<% @equipment.each do |eq| %>
+
 <div class="card">
+
             <div class="equipment">
                 <div class="image">
-                   <img alt="kayak" src="https://images.unsplash.com/photo-1544443244-6d30db813769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80" class="center">
+                   <img alt="kayak" src="https://images.unsplash.com/photo-1544443244-6d30db813769?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80">
                 </div>
           
               <div class="info">
-                <h1 class="title">Kayak</h1>
+                <h2 class="title"><%= eq.title %></h2>
               <div class="book_now">
-                    <button><a href="/equipment/">Book Now</a></button>
+                    <button class="button"><a href="/equipment/">Book Now</a></button>
              </div>
       </div>
   </div>
+</div>
+<% end %>
 </div>
 
 <%# <div class="card-container">  
     <% @cocktails.each do |cocktail| %>
       <%# <div class="card-product"> %>
-      <%# <% if cocktail.photo.attached? %> %>
-        <%# <%= link_to cl_image_tag(cocktail.photo.key), cocktail_path(cocktail)  %> %>
-      <%# <%end%> %>
+      <%# <% if cocktail.photo.attached? %>
+        <%# <%= link_to cl_image_tag(cocktail.photo.key), cocktail_path(cocktail)  %> 
+      <%# <%end%> 
         <%# <div class="card-product-infos"> %>
-          <%# <h2><%= cocktail.name %> </h2> %>
-          <%# <p><em>Created by <%=cocktail.user_name%></em></p> %>
-          <%# <p><em>On <%=cocktail.created_at.strftime("%A, %b %d")%></em></p> %>
+          <%# <h2><%= cocktail.name %> </h2>
+          <%# <p><em>Created by <%=cocktail.user_name%></em></p>
+          <%# <p><em>On <%=cocktail.created_at.strftime("%A, %b %d")%></em></p> 
           <%# <div class="remove_btn"> %>
-            <%# <%= link_to "Remove", cocktail_path(cocktail), method: :delete, :class => "btn btn-flat" %> %>
+            <%# <%= link_to "Remove", cocktail_path(cocktail), method: :delete, :class => "btn btn-flat" %>
           <%# </div> %>
         <%# </div> %>
       <%# </div> %>
-    <%# <%end%> %>
-<%# </div> %> %>
+    <%# <%end%>
+<%# </div> %>
