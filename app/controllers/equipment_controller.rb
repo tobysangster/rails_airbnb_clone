@@ -7,7 +7,7 @@ class EquipmentController < ApplicationController
       def show
         @equipment = Equipment.find(params[:id])
       end
-      
+
       def new
         @equipment = Equipment.new
       end
@@ -38,5 +38,5 @@ class EquipmentController < ApplicationController
       def equipment_params
         params.require(:equipment).permit(:title, :category, :price, :description, :rules)
       end
-    
+
 end

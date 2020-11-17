@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   # root to: "equipment#index"
-  resources :equipment
-    # resources :doses, only: [:create]
+  resources :equipment do
+    resources :bookings, only: [:new, :create, :update, :destroy]
     # resources :reviews, only: [:create]
-  # end
+  end
   # resources :doses, only: [:destroy]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
