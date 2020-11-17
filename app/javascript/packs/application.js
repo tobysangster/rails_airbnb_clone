@@ -32,3 +32,14 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
 });
+
+
+
+(function () {
+(document).scroll(function () {
+  var $nav = $(".navbar-lewagon");
+  nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
