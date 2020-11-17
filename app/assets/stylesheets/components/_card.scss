@@ -1,23 +1,36 @@
+.card-container {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
 .card {
     background-color: white;
     border: black;
     height: 300px;
-    width: 275px;
-    padding: 20px;
-    drop-shadow: 5px solid grey;
+    width: 250px;
+    padding: 15px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    // display: flex;
+    align-items: center;
+    margin: 20px;
 
 }
 .image img {
     height: 190px;
     width: 200px;
+    border-radius: 15px;
     object-fit: cover;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+.info {
+    padding: 5px;
+    text-align: center;
+}
+
+.button {
+
+}
 
 
