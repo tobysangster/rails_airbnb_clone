@@ -1,0 +1,23 @@
+.card {
+    background-color: white;
+    border: black;
+    height: 300px;
+    width: 275px;
+    padding: 20px;
+    drop-shadow: 5px solid grey;
+
+}
+.image img {
+    height: 190px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
