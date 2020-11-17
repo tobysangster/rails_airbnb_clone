@@ -1,1 +1,54 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/"><img border="0" alt="Equiprent" src="https://imgur.com/BeTJtFg" width="100" height="100"></a>
+  <form class="form-inline">
+    <button class="btn btn-outline-primary" type="button">Main button</button>
+    <div style="padding-left: 10px;">
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="loginbox">
+                <div class="login">
+                  Log in
+                </div>
+                <div class="cancel-button">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtncross">X</button>
+                </div>
+              </div>
+              <div class="container">
+                <input type="text" placeholder="Enter Username" name="uname" required class="input-box" >
+                <input type="password" placeholder="Enter Password" name="psw" required class="input-box" >
+                <button type="submit">Login</button>
+                <div class="container">
+                  <div class="remember">
+                  <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                  </div>
+                  <div class="forgot">
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="container" style="background-color:#f1f1f1">
+                  <button type="submit">Sign up</button>
+              </div>
+            </form>
+          </div>
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+        </script>
+    </div>
+  </form>
+</nav>
+
 <h1>Welcome to the Single Hub</h1>
+<br>
+
+
