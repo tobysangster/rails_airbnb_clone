@@ -2,6 +2,7 @@
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
+ padding-top: 100px;
 }
 .card {
     background-color: white;
@@ -12,7 +13,6 @@
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     border: 2px solid rgb(255, 255, 255);
     border-radius: 15px;
-    // display: flex;
     align-items: center;
     margin: 20px;
 
