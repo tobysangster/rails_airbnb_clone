@@ -1,0 +1,40 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    height: 700px;
+  }
+  
+  .banner h1 {
+    margin: 0;
+    color: black;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .banner p {
+    font-size: 20px;
+    color: white;
+    opacity: .7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .child {
+    height: 400px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 25px;
+    width: 450px;
+    position: absolute;
+    top: 206px;
+    right: 20px;
+    margin-left: 20px;
+    background-color: #f5f1ed;  
+    color: black;
+    display: flex;
+    flex-direction: column;  
+    justify-content: left;
+    border-radius: 8px;
+  }
+
