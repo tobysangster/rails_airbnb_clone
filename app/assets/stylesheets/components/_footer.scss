@@ -1,12 +1,12 @@
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    color: white;
+    color: red;
     text-align: center;
     background-color: #474747;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%230c2b06' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23ad0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%231f2c00' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23a51b03' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23322c00' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239e2708' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23442900' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%2396300e' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23572200' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238f3714' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%2369150a' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23883c1a' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
+    height: 100px;
   }

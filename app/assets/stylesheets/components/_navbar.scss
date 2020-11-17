@@ -1,8 +1,19 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: transparent;
   padding-left: 10%;
   padding-right: 10%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -20,3 +31,5 @@
 .navbar-logo {
   height: 60px;
 }
+
+
