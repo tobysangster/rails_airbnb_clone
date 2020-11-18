@@ -4,6 +4,6 @@
 <h1><%= @equipment.rules %></h1>
 <h1><%= @equipment.description %></h1>
 <% @equipment.photos.each do |photo| %>
-<%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>
 <button class="button"><%= link_to 'Book now',  new_equipment_booking_path(@equipment) %></button>
