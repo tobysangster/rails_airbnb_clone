@@ -3,6 +3,7 @@
  flex-wrap: wrap;
  justify-content: center;
  padding-top: 100px;
+
 }
 .card {
     background-color: white;
@@ -12,15 +13,20 @@
     padding: 15px;
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
     border: 2px solid rgb(255, 255, 255);
-    border-radius: 15px;
+    border-radius: 8px !important;
     align-items: center;
     margin: 20px;
+}
+.image {
+    align-items: center;
+    text-align: center;
 
 }
+
 .image img {
     height: 190px;
     width: 200px;
-    border-radius: 15px;
+    border-radius: 8px;
     object-fit: cover;
 }
 
