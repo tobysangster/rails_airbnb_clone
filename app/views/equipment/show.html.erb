@@ -1,10 +1,47 @@
-<h1><%= @equipment.title %></h1>
-<h1><%= @equipment.price %></h1>
-<h1><%= @equipment.category %></h1>
-<h1><%= @equipment.rules %></h1>
-<h1><%= @equipment.description %></h1>
-<% @equipment.photos.each do |photo| %>
-    <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
-<% end %>
-<button class="button"><%= link_to 'Book now',  new_equipment_booking_path(@equipment) %></button>
-<button class="button"><%= link_to 'Go home',  equipment_index_path %></button>
+<div class="top-space"></div>
+
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.shopify.com/s/files/1/1074/5128/files/vb693195_autumn-outer-hebrides-lifestyle-55.jpg?v=1487326329)">
+    <div>“Man cannot discover new oceans unless he has the courage to lose sight of the shore.”</div>
+    <div><em>― Andre Gide</em></div>
+</div>
+
+<div class="card-product">
+  <div class="photo">
+    <% @equipment.photos.each do |photo| %>
+        <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+    <% end %>
+  </div>
+  <div class="card-product-infos">
+    <h1><%= @equipment.title %></h1>
+    <h2>£<%= @equipment.price.round %> per day</h2>
+    <p><%= @equipment.description %></p>
+    <button class="button"><%= link_to 'Book now',  new_equipment_booking_path(@equipment) %></button>
+  </div>
+</div>
+
+
+<hr>
+<div class="spacer">
+
+    <h1>You may also like</h1>
+    <ul>
+      <li>
+        <img src="https://www.cotswoldoutdoor.com/content/dam/uk/brands/1747.png" class="logo-img">
+      </li>
+      <li>
+        <img img src="https://cdn.worldvectorlogo.com/logos/the-north-face-1.svg" class="logo-img">
+      </li>
+      <li>
+        <img img src="https://cdn.worldvectorlogo.com/logos/arc-teryx.svg" class="logo-img">
+      </li>
+      <li>
+        <img img src="https://cdn.worldvectorlogo.com/logos/patagonia.svg" class="logo-img">
+      </li>
+      <li>
+        <img img src="https://www.cotswoldoutdoor.com/content/dam/uk/brands/1836.png" class="logo-img">
+      </li>
+    </ul>
+    <h2>Find the kit to fuel your adventures.</h2>
+
+  </div>
+
