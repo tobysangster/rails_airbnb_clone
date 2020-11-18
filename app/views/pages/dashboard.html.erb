@@ -1,20 +1,28 @@
 <div class="top-space"></div>
-<div class="profile-box">
-<h1>Profile page</h1>
+<%time = current_user.created_at %>
+<%time = time.strftime("%B %Y") %>
 
-</div>
+  <div class="container">
+    <div class="card1">
+      <img src="https://www.flaticon.com/svg/static/icons/svg/848/848043.svg" alt="John" style="width:30%">
+      <h1><%= current_user.email%></h1>
+      <p class="title">Joined <%= time %></p>
+      <p>Seller Membership</p>
+   
+      <p><button>List new equipment</button></p>
+    </div>
+    <div class="card2">
+      <h1>Listed Equipment</h1>
+        <div class="photosbox">
+          <img src="https://webimg.secondhandapp.com/w-i-mgl/5b0d2507307b381ec42fe1a2" alt="John" style="width:200px"> 
+          <img src="https://i.ebayimg.com/images/g/9mIAAOSw3GJfjI4p/s-l640.jpg" alt="John" style="width:200px"> 
+          <img src="https://d2qh54gyqi6t5f.cloudfront.net/boat_images/12/12123/12123175/thumb_bertram-46-convertible-1979-for-sale-freeport-new-york-united-states-of-america-001.jpg" alt="John" style="width:200px">
+          <img src="https://www.pushkiting.co.uk/wp-content/uploads/2015/10/Discount-North-Kitesurfing-kites-for-sale-ex-demo-used-kitesurfing-kit-77.jpg" alt="John" style="width:200px">
+        </div>
+    </div>
+  </div>
 
-<div class="card">
-  <img src="img.jpg" alt="John" style="width:100%">
-  <h1>John Doe</h1>
-  <p class="title">CEO & Founder, Example</p>
-  <p>Harvard University</p>
-  <a href="#"><i class="fa fa-dribbble"></i></a>
-  <a href="#"><i class="fa fa-twitter"></i></a>
-  <a href="#"><i class="fa fa-linkedin"></i></a>
-  <a href="#"><i class="fa fa-facebook"></i></a>
-  <p><button>Contact</button></p>
-</div>
+
 
 
 
