@@ -1,3 +1,4 @@
+<div class="top-space"></div>
 <%time = current_user.created_at %>
 <%time = time.strftime("%B %Y") %>
 
@@ -23,6 +24,9 @@
 
 
 
+
+
+
 <% current_user.bookings.each do |booking| %>
 <%= booking.start_date %>
 <%= booking.end_date %>
@@ -34,3 +38,4 @@ test
 
 <%= link_to "Homepage", root_path %>
 
+</div>

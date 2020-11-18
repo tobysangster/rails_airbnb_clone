@@ -1,8 +1,9 @@
+<div class="top-space"></div>
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon <%= yield(:nav_style) %>" id="test" >
-  <div id="cf" <%= link_to root_path %>> 
+  <div id="cf" <%= link_to root_path %>>
     <a href="/"><img class="top" src="https://i.imgur.com/U2Tx2Pj.png"/></a>
     <%# <img class="bottom" src="https://i.imgur.com/fU3v53T.png"/> %>
-    
+
   </div>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +21,10 @@
       </li> %>
       <%if user_signed_in?%>
         <button type="button" class="btn btn-primary btn-rounded" id="inoutup"><%= link_to "Sign out", destroy_user_session_path %></button>
-      
-      
+
+
       <% else %>
-     
+
         <div class="dropdown">
         <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fas fa-caret-down"></i>
