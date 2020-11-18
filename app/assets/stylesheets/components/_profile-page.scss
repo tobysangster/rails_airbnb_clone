@@ -1,5 +1,42 @@
-.profile-box {
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+.card1 {
   background-color: transparent;
-  height: 1000px;
+  height: 600px;
   padding-top: 130px;
+  width: 50%;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 10px;
+
+}
+
+
+.card2 {
+  background-color: transparent;
+  height: 600px;
+  padding-top: 130px;
+  width: 50%;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 10px;
+
+}
+
+.photosbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.equipment_profile_button {
+  padding-top: 20px;
 }

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  resources :users, only: :show
+  get '/dashboard', to: 'pages#dashboard'
 
   # root to: "equipment#index"
   resources :equipment do
