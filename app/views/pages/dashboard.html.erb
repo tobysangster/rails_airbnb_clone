@@ -1,0 +1,15 @@
+<div class="profile-box">
+<h1>Profile page</h1>
+
+</div>
+
+<% current_user.bookings.each do |booking| %>
+<%= booking.start_date %>
+<%= booking.end_date %>
+<%= booking.total_price %>
+<% end %>
+test
+
+
+
+<%= link_to "Homepage", root_path %>
