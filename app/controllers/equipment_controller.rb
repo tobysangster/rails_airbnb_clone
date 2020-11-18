@@ -14,10 +14,11 @@ class EquipmentController < ApplicationController
 
       def create
         @equipment = Equipment.new(equipment_params)
-        if @equipment.save
+        @equipment.user = current_user
+        if @equipment.save!
           redirect_to equipment_path(@equipment)
         else
-          render "new"
+          render :new
         end
       end
 
