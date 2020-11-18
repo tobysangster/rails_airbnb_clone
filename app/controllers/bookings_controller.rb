@@ -1,4 +1,7 @@
 class BookingsController < ApplicationController
+
+  before_action :authenticate_user!
+
   def new
     @equipment = Equipment.find(params[:equipment_id])
     @booking = Booking.new
@@ -8,8 +11,11 @@ class BookingsController < ApplicationController
     @equipment = Equipment.find(params[:equipment_id])
     @booking = Booking.new(booking_params)
     @booking.equipment = @equipment
+    @booking.user = current_user
     if @booking.save
-      redirect_to equipment_bookings_path(@equipment)
+      redirect_to equipment_index_path
+    else
+      render :new
     end
   end
 
@@ -28,6 +34,6 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:start_date, :end_date, :equipment_id)
+    params.require(:booking).permit(:start_date, :end_date)
   end
 end
