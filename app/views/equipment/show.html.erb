@@ -1,3 +1,5 @@
+<div class="top-space"></div>
+
 <h1><%= @equipment.title %></h1>
 <h1><%= @equipment.price %></h1>
 <h1><%= @equipment.category %></h1>
@@ -7,4 +9,4 @@
     <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>
 <button class="button"><%= link_to 'Book now',  new_equipment_booking_path(@equipment) %></button>
-<button class="button"><%= link_to 'Go back',  equipment_index_path %></button>
+<button class="button"><%= link_to 'Go home',  equipment_index_path %></button>

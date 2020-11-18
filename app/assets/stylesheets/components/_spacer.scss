@@ -1,3 +1,7 @@
+.top-space {
+  margin-top: 100px;
+}
+
 .spacer {
     text-align: center;
     padding-top: 25px;
@@ -11,7 +15,7 @@
     font-size: 36px;
     font-weight: bold;
   }
-  
+
 
   .spacer h2 {
     margin: 0;
@@ -19,7 +23,7 @@
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -28,14 +32,28 @@
     align-items: baseline;
 
   }
-  
+
   li {
     height: 15vh;
   }
-  
-  
+
+
  .logo-img {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
