@@ -20,6 +20,8 @@
       </li> %>
       <%if user_signed_in?%>
         <button type="button" class="btn btn-primary btn-rounded" id="inoutup"><%= link_to "Sign out", destroy_user_session_path %></button>
+      
+      
       <% else %>
      
         <div class="dropdown">
