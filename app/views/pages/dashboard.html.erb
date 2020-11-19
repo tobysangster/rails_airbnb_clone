@@ -1,7 +1,7 @@
 <%time = current_user.created_at %>
 <%time = time.strftime("%B %Y") %>
 <div class="main-page">
-   <div class="bannerprofile" style="background-color:#03565a">
+   <div class="bannerprofile" style="background-color:#4e5f6c">
 </div>
 <div class="top-text">
   <h1>Hi there,</h1>
@@ -11,15 +11,16 @@
   <div class="profile-container">
     <div class="card1">
       <div class="cardbox1-left">
-        <img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/848/848043.svg" alt="John" style="width:80%; height:auto">
-        <h2 class="page-h2"><%= current_user.email%></h2>
+        <i class="far fa-user-circle"></i>
+        <h4 class="page-h2"><%= current_user.email%></h4>
         <p class="time">Joined <%= time %></p>
         <p>Change password here</p>
+        <a class="btn btn-secondary" href="<%= link_to "List new equipment", new_equipment_path %>
         <p><button><%= link_to "List new equipment", new_equipment_path %></button></p>
 
       </div>
       <div class="cardbox1-right">
-        <h2 class="right-page-h2">Listed Equipment</h2>
+        <h3 class="right-page-h2">Listed Equipment</h3>
         <div class="photosbox">
           <% if @equipment %>
             <% @equipment.each do |eq| %>
@@ -33,23 +34,39 @@
     </div>
 
       <div class="card2">
-        
+        <h3 class="page-h2">EquipRent Travel</h2>
+        <p class="travel-text">A Randonnée is the cycling holiday of a lifetime. These point-to-point adventures cover cycling’s most celebrated landscapes, challenging and inspiring riders in equal measure.</p>
+        <p class="travel-text">Ex Duris Gloria</p>
+        <a class="btn btn-secondary" href="">Learn more</a>
+        <img src="https://cdn.iconscout.com/icon/free/png-256/mountain-2125950-1789239.png">
     </div>
   </div>
 
-    <div class="card2">
-      <h1>Bookings from you</h1>
+
+
+  <div class="profile-container">  
+      <div class="card4">
+              <img class="equipclub" src="https://i.imgur.com/Aa7W35W.png">
+        <h3 class="page-h2">Equip Club</h2>
+        <p class="travel-text">The Equip Club is a global community of passionate, active adventurists with exclusive access to our most sought after products, experiences and offers.
+        A global network of more than 13,000 like-minded people and travel leaders connected by an easy-to-use app with hundreds of routes.</p>
+        <a class="btn btn-secondary" href="">Learn more</a>
+    </div>
+  <div class="card5">
+    <h3 class="page-h2">Bookings from you</h3>
       <% @bookings.each do |booking| %>
-        <div>
-          You booked this <%= booking.equipment.title %>
-          From <%= booking.start_date %>
-          To <%= booking.end_date %>
+        <div class="bookingtext">
+          You booked this <%= booking.equipment.title.downcase %>
+          from <%= booking.start_date %>
+          to <%= booking.end_date %>
         </div>
+        <a class="btn btn-secondary" href="<%= link_to "Edit booking", new_equipment_path %>
         <button><%= link_to 'Edit booking',  edit_equipment_booking_path(booking.equipment,booking) %></button>
+        <a class="btn btn-secondary" href="<%= link_to "Cancel booking", new_equipment_path %>
         <button><%= link_to 'Remove booking',  equipment_booking_path(booking.equipment,booking), method: :delete,  data: { confirm: "Are you sure?" }%></button>
       <% end %>
       
-      <h1>Bookings for you</h1>
+      <h3 class="page-h2">Bookings for you</h3>
     
       <h1><% current_user.incoming_bookings.each do |booking|%></h1>
      <div>
@@ -58,5 +75,7 @@
       To <%= booking.end_date %>
      </div>
       <% end %>
-</div>
-   <a href="https://www.vecteezy.com/free-vector/contour">Contour Vectors by Vecteezy</a>
+  </div>
+    </div>
+
+
