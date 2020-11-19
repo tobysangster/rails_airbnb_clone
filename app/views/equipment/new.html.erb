@@ -11,8 +11,9 @@
         <%= f.input :category %>
         <%= f.input :description %>
         <%= f.input :rules %>
+        <%= f.input :location %>
         <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-        <%= f.submit :submit  %>
+        <%= f.submit :submit %>
       <% end %>
       <%= link_to "Return Home", root_path %>
   </div>
