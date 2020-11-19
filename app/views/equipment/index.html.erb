@@ -8,10 +8,10 @@
             <%= link_to cl_image_tag(eq.photos.first.key), equipment_path(eq)  %>
         </div>
       <div class="info">
-        <h5 class="title"><%= eq.title %></h5>
-        
-        <p class="card_description"><%= eq.description %></p>
-        <p class="card_price">£<%= eq.price %></p>
+        <div><p class="review"><i class="fas fa-star"></i><% star_rand_num = rand(1..5) %> <%= star_rand_num %><% rand_num = rand(10-500) %><div class="review_number">(<%= rand_num %>)</div></p>
+      </div>
+        <p class="title"><%= eq.title %></p>
+        <p class="card_price">£<%= eq.price.round %></p>
 
 
       <%# <div class="book_now"> %>
