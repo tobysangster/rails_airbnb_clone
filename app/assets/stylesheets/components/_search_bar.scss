@@ -1,0 +1,97 @@
+.mini-banner h1 {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.banner-h3 {
+  margin-left: 10%;
+}
+
+.search-bar {
+  display: flex;
+  background: rgb(255, 255, 255);
+  width: 80%;
+  height: 64px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.equipment {
+  display: flex;
+  width: 30%;
+  background: rgb(255, 255, 255);
+  height: 40px;
+  font-size: 11px;
+  font-weight: 700;
+  flex-direction: column;
+  input {
+    border: none;
+  }
+  label {
+    margin-bottom: 0px !important;
+  }
+}
+
+.category {
+  display: flex;
+  width: 20%;
+  background: rgb(255, 255, 255);
+  height: 40px;
+  font-size: 11px;
+  font-weight: 700;
+  flex-direction: column;
+  #values {
+    height: 23px;
+    border: none;
+  }
+  label {
+    margin-bottom: 0px !important;
+  }
+}
+
+.check-in {
+  display: flex;
+  width: 16%;
+  background: rgb(255, 255, 255);
+  height: 40px;
+  font-size: 11px;
+  font-weight: 700;
+  flex-direction: column;
+  input {
+    border: none;
+  }
+  label {
+    margin-bottom: 0px !important;
+  }
+}
+
+.check-out {
+  display: flex;
+  width: 16%;
+  background: rgb(255, 255, 255);
+  height: 40px;
+  font-size: 11px;
+  font-weight: 700;
+  flex-direction: column;
+  input {
+    border: none;
+  }
+  label {
+    margin-bottom: 0px !important;
+  }
+}
+
+.regular {
+  width: 12%;
+  background: rgb(255, 255, 255);
+  height: 32px;
+  padding: 0 !important;
+  font-weight: 700;
+}
