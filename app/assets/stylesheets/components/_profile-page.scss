@@ -1,11 +1,11 @@
-.container {
+.profile-container {
   display: flex;
   justify-content: center;
   margin-top: 100px;
 }
 
 
-.card1 {
+.card-profile {
   background-color: transparent;
   height: 600px;
   padding-top: 130px;
@@ -18,7 +18,7 @@
 }
 
 
-.card2 {
+.card-listings {
   background-color: transparent;
   height: 600px;
   padding-top: 130px;
@@ -40,4 +40,8 @@
 
 .equipment_profile_button {
   padding-top: 20px;
+}
+
+h1 {
+  width: 100%;
 }

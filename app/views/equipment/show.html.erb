@@ -1,10 +1,10 @@
 <div class="top-space"></div>
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.shopify.com/s/files/1/1074/5128/files/vb693195_autumn-outer-hebrides-lifestyle-55.jpg?v=1487326329)">
+<div class="top-banner-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.shopify.com/s/files/1/1074/5128/files/vb693195_autumn-outer-hebrides-lifestyle-55.jpg?v=1487326329)">
     <div>“Man cannot discover new oceans unless he has the courage to lose sight of the shore.”</div>
     <div><em>― Andre Gide</em></div>
 </div>
 
-<div class="card-product">
+<div class="card-show-product">
   <div class="photo">
     <% @equipment.photos.each do |photo| %>
         <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>

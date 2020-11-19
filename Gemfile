@@ -35,6 +35,9 @@ gem 'simple_form'
 gem 'cloudinary', '~> 1.16.0'
 gem 'activestorage-cloudinary-service'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'jquery-rails'
+gem 'momentjs-rails'
+gem 'bootstrap-daterangepicker-rails'
 
 
 

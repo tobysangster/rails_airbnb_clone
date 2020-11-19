@@ -7,7 +7,7 @@
   color: white;
   align-items: self-start;
   padding-top: 30px;
-  height: 100px;
+  height: 120px;
   background-color: white;
   z-index: 9999;
   position: fixed;
@@ -59,4 +59,7 @@ a {
   display: none;
 }
 
+.dropdown {
+  padding-top: 25px;
+}
 
