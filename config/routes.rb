@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'messages/new'
+  get 'messages/create'
+  get 'messages/show'
   devise_for :users
 
   devise_scope :user do
