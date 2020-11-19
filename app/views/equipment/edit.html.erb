@@ -1,0 +1,19 @@
+<div class="top-space"></div>
+
+<div class="form-container" style="background-image: url(#);">
+  <div class="child-create">
+    <div class="banner-h1">
+      <h1>Create <strong>your</strong> listing</h1>
+    </div>
+      <%= simple_form_for(@equipment) do |f| %>
+        <%= f.input :title %>
+        <%= f.input :price %>
+        <%= f.input :category %>
+        <%= f.input :description %>
+        <%= f.input :rules %>
+        <%= f.input :photos, as: :file, input_html: { multiple: true } %>
+        <%= f.submit :submit  %>
+      <% end %>
+      <%= link_to "Return Home", root_path %>
+  </div>
+</div>

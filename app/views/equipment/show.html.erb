@@ -7,7 +7,7 @@
 <div class="card-product">
   <div class="photo">
     <% @equipment.photos.each do |photo| %>
-        <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
+        <a href=""><%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %></a>
     <% end %>
   </div>
   <div class="card-product-infos">
@@ -15,6 +15,8 @@
     <h2>£<%= @equipment.price.round %> per day</h2>
     <p><%= @equipment.description %></p>
     <button class="button"><%= link_to 'Book now',  new_equipment_booking_path(@equipment) %></button>
+    <button class="button"><%= link_to 'Edit your listing',  edit_equipment_path(@equipment) %></button>
+    <button class="button"><%= link_to 'Remove you listing',  equipment_path(@equipment), method: :delete,  data: { confirm: "Are you sure?" }  %></button>
   </div>
 </div>
 

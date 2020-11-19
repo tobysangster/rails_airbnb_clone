@@ -3,5 +3,7 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+    @equipment = current_user.equipment
+    @bookings = current_user.bookings
   end
 end
