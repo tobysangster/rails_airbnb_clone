@@ -11,6 +11,7 @@
       <% end %>
       <h1><%= @equipment.title %></h1>
       <p class="card-product-desc"><%= @equipment.description %></p>
+      <hr></hr>
       <p class="card-product-label"><i class="far fa-calendar-alt"></i> Cancellation policy</p>
       <p class="card-product-label-desc">Free cancellation outside 24 hours before booking.</p>
       <p class="card-product-label"><i class="fas fa-ruler"></i> Rules for renting</p>
@@ -20,7 +21,7 @@
       <%# <h1><%= @equipment.title %></h1> 
       <%# <p><%= @equipment.description %></p>
       <h2>£<%= @equipment.price.round %> per day</h2>
-      <button class="button-show" style="width: 75px;"><%= link_to ' Book ',  new_equipment_booking_path(@equipment) %></button>
+      <%# <button class="button-show" style="width: 75px;"><%= link_to ' Book ',  new_equipment_booking_path(@equipment) %></button>
       <% if @equipment.user == current_user %>
         <button class="button-show" style="width: 75px;"><%= link_to ' Edit ',  edit_equipment_path(@equipment) %></button>
         <button class="button-show" style="width: 75px;"><%= link_to 'Remove',  equipment_path(@equipment), method: :delete,  data: { confirm: "Are you sure?" }  %></button>
@@ -28,18 +29,18 @@
     </div>
   </div>
   <div class="booking-card">
-  <h1>This will be a  booking form</h1>
-  
     <div class="top-space"></div>
     <div class="form-container" style="background-image: url(#);">
       <div class="child-create">
         <div class="banner-h1">
-          <h1>Book the <%= @equipment.title %></h1>
-        </div>
-          <%= simple_form_for([@equipment, @booking]) do |f| %>
-            <%= f.input :start_date %>
-            <%= f.input :end_date %>
-            <%= f.submit :submit  %>
+        <% if @equipment.user != current_user %>
+            <h1>Book the <%= @equipment.title %></h1>
+            </div>
+              <%= simple_form_for([@equipment, @booking]) do |f| %>
+                <%= f.input :start_date %>
+                <%= f.input :end_date %>
+                <%= f.submit :submit  %>
+              <% end %>
           <% end %>
           <%= link_to "Back", equipment_path(@equipment) %>
       </div>
