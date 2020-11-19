@@ -9,7 +9,7 @@
         </div>
       <div class="info">
 
-        <div><p class="review"><i class="fas fa-star"></i><% star_rand_num = rand(1..5) %> <%= star_rand_num %><% rand_num = rand(10-500) %><div class="review_number">(<%= rand_num %>)</div></p>
+        <p><i class="fas fa-star"></i><% star_rand_num = rand(1..5) %> <%= star_rand_num %><% rand_num = rand(10-500) %><span class="review"> (<%= rand_num %>)</span></p>
       </div>
         <p class="title"><%= eq.title %></p>
         <p class="card_price">£<%= eq.price.round %></p>
