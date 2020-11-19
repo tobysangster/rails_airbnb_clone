@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   # root to: "equipment#index"
   resources :equipment do
-    resources :bookings, only: [:new, :create, :update, :destroy]
+    resources :bookings, only: [:new, :create, :update, :edit, :destroy]
     # resources :reviews, only: [:create]
   end
   # resources :doses, only: [:destroy]
