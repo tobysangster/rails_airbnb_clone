@@ -22,6 +22,10 @@ class EquipmentController < ApplicationController
         end
       end
 
+      def edit
+        @equipment = Equipment.find(params[:id])
+      end
+
       def update
         @equipment = Equipment.find(params[:id])
         @equipment.update(equipment_params)
@@ -37,7 +41,7 @@ class EquipmentController < ApplicationController
       private
 
       def equipment_params
-        params.require(:equipment).permit(:title, :category, :price, :description, :rules, photos: [])
+        params.require(:equipment).permit(:title, :category, :price, :description, :location, :rules, photos: [])
       end
 
 end
