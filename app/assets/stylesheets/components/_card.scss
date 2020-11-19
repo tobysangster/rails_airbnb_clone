@@ -8,28 +8,41 @@
 .card {
     background-color: white;
     border: black;
-    height: 300px;
-    width: 250px;
-    padding: 15px;
-    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    height: 244.88px;
+    width: 253.33px;
+    // padding: 0px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 8px !important;
     align-items: center;
     margin: 20px;
-}
-.image {
-    align-items: center;
-    text-align: center;
-
+    line-height: 2px;
+    font-family: inherit;
+    font-size: 100%;
 }
 
 .image img {
-    height: 190px;
-    width: 200px;
+    height: 168.88px;
+    width: 253.33px;
     border-radius: 8px;
     object-fit: cover;
+    // top: 0px !important;
+    // left: 0px !important;
+    // z-index: 1 !important;
 }
 
+.title {
+    text-align: left;
+}
+
+.card_description{
+    text-align: left;
+}
+.card_price{
+    text-align: right;
+    color: green;
+    font-weight: bold;
+
+}
 .info {
     padding: 5px;
     text-align: center;
