@@ -1,28 +1,39 @@
-<div class="top-space"></div>
 <%time = current_user.created_at %>
 <%time = time.strftime("%B %Y") %>
-
-  <div class="container">
+<div class="main-page">
+   <div class="bannerprofile" style="background-color:#03565a">
+</div>
+<div class="top-text">
+  <h1>Hi there,</h1>
+  <h2 class="top-h2">We have a few things for you to look at.</h2>
+</div>
+</div>
+  <div class="profile-container">
     <div class="card1">
-      <img src="https://www.flaticon.com/svg/static/icons/svg/848/848043.svg" alt="John" style="width:30%">
-      <h1><%= current_user.email%></h1>
-      <p class="title">Joined <%= time %></p>
-      <p>Seller Membership</p>
-      <p><button><%= link_to "List new equipment", new_equipment_path %></button></p>
+      <div class="cardbox1-left">
+        <img class="icon" src="https://www.flaticon.com/svg/static/icons/svg/848/848043.svg" alt="John" style="width:80%; height:auto">
+        <h2 class="page-h2"><%= current_user.email%></h2>
+        <p class="time">Joined <%= time %></p>
+        <p>Change password here</p>
+        <p><button><%= link_to "List new equipment", new_equipment_path %></button></p>
+
+      </div>
+      <div class="cardbox1-right">
+        <h2 class="right-page-h2">Listed Equipment</h2>
+        <div class="photosbox">
+          <% if @equipment %>
+            <% @equipment.each do |eq| %>
+              <div class="profilephotos">
+              <%= link_to cl_image_tag(eq.photos.first.key), equipment_path(eq) %>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+      </div>
     </div>
 
       <div class="card2">
-        <h1>Listed Equipment</h1>
-        <div class="photosbox">
-          <% if @equipment %>
-          <% @equipment.each do |eq| %>
-            <%= link_to cl_image_tag(eq.photos.first.key), equipment_path(eq) %>
-          <% end %>
-          <% end %>
-          <!-- <div class="equipment_profile_button"> -->
-            <!-- <p><button><%= link_to "Select your equipment", equipment_index_path %></button></p> -->
-          <!-- </div> -->
-        </div>
+        
     </div>
   </div>
 
@@ -48,3 +59,4 @@
      </div>
       <% end %>
 </div>
+   <a href="https://www.vecteezy.com/free-vector/contour">Contour Vectors by Vecteezy</a>
