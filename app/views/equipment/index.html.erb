@@ -8,11 +8,21 @@
             <%= link_to cl_image_tag(eq.photos.first.key), equipment_path(eq)  %>
         </div>
       <div class="info">
-        <h2 class="title"><%= eq.title %></h2>
+
       <div class="book_now">
+
+        <h5 class="title"><%= eq.title %></h5>
+        
+        <p class="card_description"><%= eq.description %></p>
+        <p class="card_price">£<%= eq.price %></p>
+
+
+      <%# <div class="book_now"> %>
+        <%# <button class="card_button">Show me</button> %>
+
             <%# <button class="button"><%= link_to 'Show me', equipment_path(eq) %>
-    </div>
-</div>
+    <%# </div> %>
+      </div>
     </div>
   </div>
 <% end %>
