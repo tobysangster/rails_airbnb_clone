@@ -1,2 +1,7 @@
-<h1>Messages#new</h1>
-<p>Find me in app/views/messages/new.html.erb</p>
+ </div>
+      <%= simple_form_for(@messages) do |f| %>
+        <%= f.input :text %>
+        <%= f.submit :submit %>
+      <% end %>
+      <%= link_to "Return Home", root_path %>
+  </div>
