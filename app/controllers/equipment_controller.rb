@@ -5,14 +5,17 @@ class EquipmentController < ApplicationController
       end
 
       def show
+        @booking = Booking.new
         @equipment = Equipment.find(params[:id])
       end
 
       def new
+        @booking = Booking.find(params[:booking_id])
         @equipment = Equipment.new
       end
 
       def create
+        @booking = Booking.find(params[:booking_id])
         @equipment = Equipment.new(equipment_params)
         @equipment.user = current_user
         if @equipment.save!
@@ -21,6 +24,9 @@ class EquipmentController < ApplicationController
           render :new
         end
       end
+      
+
+
 
       def edit
         @equipment = Equipment.find(params[:id])
