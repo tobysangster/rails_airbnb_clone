@@ -42,9 +42,9 @@
     
       <h1><% current_user.incoming_bookings.each do |booking|%></h1>
      <div>
-      <p><%= booking.equipment.title %></p>
-      <p><%= booking.start_date %></p>
-      <p><%= booking.end_date %></p>
-      </div>
+      Your <%= booking.equipment.title %> has beeen booked
+      From <%= booking.start_date %>
+      To <%= booking.end_date %>
+     </div>
       <% end %>
 </div>
