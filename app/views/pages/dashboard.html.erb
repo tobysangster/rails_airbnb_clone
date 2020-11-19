@@ -8,16 +8,17 @@
       <h1><%= current_user.email%></h1>
       <p class="title">Joined <%= time %></p>
       <p>Seller Membership</p>
-
       <p><button><%= link_to "List new equipment", new_equipment_path %></button></p>
     </div>
-    <div class="card2">
-      <h1>Listed Equipment</h1>
+
+      <div class="card2">
+        <h1>Listed Equipment</h1>
         <div class="photosbox">
-          <img src="https://webimg.secondhandapp.com/w-i-mgl/5b0d2507307b381ec42fe1a2" alt="John" style="width:200px">
-          <img src="https://i.ebayimg.com/images/g/9mIAAOSw3GJfjI4p/s-l640.jpg" alt="John" style="width:200px">
-          <img src="https://d2qh54gyqi6t5f.cloudfront.net/boat_images/12/12123/12123175/thumb_bertram-46-convertible-1979-for-sale-freeport-new-york-united-states-of-america-001.jpg" alt="John" style="width:200px">
-          <img src="https://www.pushkiting.co.uk/wp-content/uploads/2015/10/Discount-North-Kitesurfing-kites-for-sale-ex-demo-used-kitesurfing-kit-77.jpg" alt="John" style="width:200px">
+          <% if @equipment %>
+          <% @equipment.each do |eq| %>
+            <%= link_to cl_image_tag(eq.photos.first.key), equipment_path(eq) %>
+          <% end %>
+          <% end %>
           <!-- <div class="equipment_profile_button"> -->
             <!-- <p><button><%= link_to "Select your equipment", equipment_index_path %></button></p> -->
           <!-- </div> -->
@@ -25,14 +26,25 @@
     </div>
   </div>
 
-
-
-
-
-
-<% current_user.bookings.each do |booking| %>
-<%= booking.start_date %>
-<%= booking.end_date %>
-<%= booking.total_price %>
-<% end %>
+    <div class="card2">
+      <h1>Bookings from you</h1>
+      <% @bookings.each do |booking| %>
+        <div>
+          You booked this <%= booking.equipment.title %>
+          From <%= booking.start_date %>
+          To <%= booking.end_date %>
+        </div>
+        <button><%= link_to 'Edit booking',  edit_equipment_booking_path(booking.equipment,booking) %></button>
+        <button><%= link_to 'Remove booking',  equipment_booking_path(booking.equipment,booking), method: :delete,  data: { confirm: "Are you sure?" }%></button>
+      <% end %>
+      
+      <h1>Bookings for you</h1>
+    
+      <h1><% current_user.incoming_bookings.each do |booking|%></h1>
+     <div>
+      <p><%= booking.equipment.title %></p>
+      <p><%= booking.start_date %></p>
+      <p><%= booking.end_date %></p>
+      </div>
+      <% end %>
 </div>

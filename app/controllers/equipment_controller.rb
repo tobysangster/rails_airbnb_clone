@@ -5,14 +5,17 @@ class EquipmentController < ApplicationController
       end
 
       def show
+        @booking = Booking.new
         @equipment = Equipment.find(params[:id])
       end
 
       def new
+        @booking = Booking.find(params[:booking_id])
         @equipment = Equipment.new
       end
 
       def create
+        @booking = Booking.find(params[:booking_id])
         @equipment = Equipment.new(equipment_params)
         @equipment.user = current_user
         if @equipment.save!
@@ -20,6 +23,13 @@ class EquipmentController < ApplicationController
         else
           render :new
         end
+      end
+      
+
+
+
+      def edit
+        @equipment = Equipment.find(params[:id])
       end
 
       def update
@@ -37,7 +47,7 @@ class EquipmentController < ApplicationController
       private
 
       def equipment_params
-        params.require(:equipment).permit(:title, :category, :price, :description, :rules, photos: [])
+        params.require(:equipment).permit(:title, :category, :price, :description, :location, :rules, photos: [])
       end
 
 end

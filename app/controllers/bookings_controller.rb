@@ -13,22 +13,28 @@ class BookingsController < ApplicationController
     @booking.equipment = @equipment
     @booking.user = current_user
     if @booking.save
-      redirect_to equipment_index_path
+      redirect_to dashboard_path
     else
       render :new
     end
   end
 
+  def edit
+    @bookings = Booking.find(params[:id])
+    @equipment = @bookings.equipment
+  end
+
+
   def update
     @booking = Booking.find(params[:id])
     @booking.update(booking_params)
-    redirect_to equipment_booking_path(@booking)
+    redirect_to dashboard_path
   end
 
   def destroy
     @booking = Booking.find(params[:id])
     @booking.destroy
-    redirect_to equipment_path(@booking.equipment)
+    redirect_to dashboard_path
   end
 
   private

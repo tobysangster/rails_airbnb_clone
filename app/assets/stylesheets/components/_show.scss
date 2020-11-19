@@ -1,3 +1,8 @@
+a {
+  color:white !important;
+  
+}
+
 .card-category {
     background-size: cover;
     background-position: center;
@@ -7,9 +12,9 @@
     align-items: center;
     color: white;
     font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    // box-shadow: 0 0 15px rgba(0,0,0,0.2);
     flex-direction: column;
     font-size: 30px;
   }
@@ -18,17 +23,17 @@
     overflow: hidden;
     height: 500px;
     background: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    // box-shadow: 0 0 15px rgba(0,0,0,0.2);
     display: flex;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
-
+    
   }
   
   .card-product img {
     height: 100%;
-    
+    border-radius: 8px;
     object-fit: cover;
   }
   
@@ -36,6 +41,7 @@
     font-size: 36px;
     font-weight: bold;
     margin: 0;
+    line-height: 1.8;
   }
   
   .card-product p {
@@ -43,9 +49,21 @@
     line-height: 1.4;
     opacity: .7;
     margin-bottom: 0;
-    margin-top: 8px;
+    margin-top: 5px;
   }
   
   .card-product .card-product-infos {
-    padding: 24px;
+    padding: 30px;
+    
+  }
+
+  .booking_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card-product-label-desc{
+    font-size: 0.875em;
+    color:grey;
   }
