@@ -15,8 +15,10 @@
     <h2>£<%= @equipment.price.round %> per day</h2>
     <p><%= @equipment.description %></p>
     <button class="button"><%= link_to 'Book now',  new_equipment_booking_path(@equipment) %></button>
-    <button class="button"><%= link_to 'Edit your listing',  edit_equipment_path(@equipment) %></button>
-    <button class="button"><%= link_to 'Remove you listing',  equipment_path(@equipment), method: :delete,  data: { confirm: "Are you sure?" }  %></button>
+    <% if @equipment.user == current_user %>
+      <button class="button"><%= link_to 'Edit your listing',  edit_equipment_path(@equipment) %></button>
+      <button class="button"><%= link_to 'Remove your listing',  equipment_path(@equipment), method: :delete,  data: { confirm: "Are you sure?" }  %></button>
+    <% end %>
   </div>
 </div>
 
