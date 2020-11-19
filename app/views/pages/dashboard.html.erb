@@ -26,14 +26,20 @@
     </div>
   </div>
 
+    <div class="card2">
+      <h1>Your bookings</h1>
+      <% @bookings.each do |booking| %>
+        <div>
+          You booked this <%= booking.equipment.title %>
+          From <%= booking.start_date %>
+          To <%= booking.end_date %>
+        </div>
+        <button><%= link_to 'Edit booking',  edit_equipment_booking_path(booking.equipment,booking) %></button>
+        <button><%= link_to 'Remove booking',  equipment_booking_path(booking.equipment,booking), method: :delete,  data: { confirm: "Are you sure?" }%></button>
+      <% end %>
+    </div>
 
 
 
 
-
-<% @bookings.each do |booking| %>
-<%= booking.start_date %>
-<%= booking.end_date %>
-<%= booking.total_price %>
-<% end %>
 </div>
