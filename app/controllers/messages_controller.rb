@@ -1,4 +1,4 @@
-# class MessagesController < ApplicationController
+class MessagesController < ApplicationController
 #   def new
 #     @booking = Booking.find(params[:booking_id])
 #     @message = Message.new
@@ -18,4 +18,4 @@
 
 #   def show
 #   end
-# end
+end
