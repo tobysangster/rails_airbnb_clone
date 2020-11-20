@@ -8,6 +8,6 @@ class Equipment < ApplicationRecord
   pg_search_scope :search_by_title_and_category,
     against: [ :title, :category ],
     using: {
-      tsearch: { prefix: true } 
+      tsearch: { prefix: true }
     }
 end
