@@ -13,7 +13,7 @@
 
 .search-bar {
   display: flex;
-  background: rgb(255, 255, 255);
+  background: white;
   width: 80%;
   height: 64px;
   margin: auto;
@@ -21,6 +21,8 @@
   box-shadow: rgba(0, 0, 0, 0.28) 0px 8px 28px;
   justify-content: space-around;
   align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .equipment {
@@ -35,7 +37,8 @@
     border: none;
   }
   label {
-    margin-bottom: 0px !important;
+    background-color: transparent;
+    color: #4e5f6c;
   }
 }
 
@@ -50,9 +53,11 @@
   #values {
     height: 23px;
     border: none;
+    color: #4e5f6c;
   }
   label {
-    margin-bottom: 0px !important;
+    background-color: transparent;
+    color: #4e5f6c;
   }
 }
 
@@ -69,6 +74,8 @@
   }
   label {
     margin-bottom: 0px !important;
+    background-color: transparent;
+    color: #4e5f6c;
   }
 }
 
@@ -82,9 +89,12 @@
   flex-direction: column;
   input {
     border: none;
+    color: #4e5f6c;
   }
   label {
     margin-bottom: 0px !important;
+    background-color: transparent;
+    color: #4e5f6c;
   }
 }
 
@@ -94,4 +104,22 @@
   height: 32px;
   padding: 0 !important;
   font-weight: 700;
+}
+
+
+.searchbartext {
+  color: #4e5f6c;
+}
+
+.check-in input {
+  color: #4e5f6c;
+}
+
+.check-out input {
+  border: #4e5f6c;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  color: #4e5f6c!important;
 }
