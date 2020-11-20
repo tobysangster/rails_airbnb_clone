@@ -43,6 +43,10 @@
     margin-bottom: 3px !important;
   }
 }
+.searchbartext::-webkit-input-placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
 
 .searchbartext::-webkit-input-placeholder {
   color: #4E5F6C;
