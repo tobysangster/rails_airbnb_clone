@@ -1,0 +1,246 @@
+a {
+    color:white !important;
+    // background-color: black;
+  }
+  
+  .card-category {
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      flex-direction: column;
+      font-size: 30px;
+    }
+  
+    .card-product {
+      // overflow: hidden;
+      // height: 550px;
+      background: white;
+      display: flex;
+      align-items: center;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-top: 75px
+  
+    }
+  
+    .card-product img {
+      height: 80%;
+      border-radius: 8px;
+      object-fit: cover;
+      max-width: 100%;
+    }
+  
+    .card-product h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1.8;
+    }
+  
+    .card-product p {
+      font-size: 30x !important;
+      line-height: 1.4;
+      opacity: .7;
+      margin-bottom: 0;
+      margin-top: 5px;
+    }
+  
+    .card-product .card-product-infos {
+      padding: 30px;
+  
+    }
+  
+    .booking_container{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .card-product-label-desc{
+      font-size: 0.875em;
+      color:grey;
+    }
+  
+  
+    /* Popup box BEGIN */
+  .hover_bkgr_fricc{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+  }
+  .hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+  }
+  .hover_bkgr_fricc > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+  }
+  .popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  .popupCloseButton:hover {
+    background-color: #ccc;
+  }
+  .trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  /* Popup box BEGIN */
+  
+  
+  
+  
+  .show-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 95%;
+    margin: auto;
+  }
+  
+  .card1new {
+    background-color: white;
+    height: 740px;
+    width: 65%;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-left: 75px;
+    margin-right: 25px;
+    margin-top: 25px;
+    display: flex;
+  
+  }
+  
+  .card2new {
+    background-color: white;
+    height: 740px;    
+    width: 30%;
+    border-radius: 16px;
+    text-align: center;
+    margin-right: 75px;
+    margin-left: 25px;
+    margin-top: 25px;
+    padding-top: 0px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  
+  .cardbox1-leftshow {
+  
+    height: 90%;
+    margin: 16px;
+    padding-top: 24px;
+    text-align: center;
+    margin-left: 32px;
+    margin: auto;
+  
+  
+  }
+  
+  .cardbox1-rightshow {
+    width: 70%;
+    height: 90%;
+    margin: 16px;
+    padding-top: 24px;
+    padding-right: 16px;
+  }
+  
+  .showphoto a img {
+    border-radius: 16px;
+  }
+  
+  .email {
+    margin: auto;
+    margin-top: 24px;
+    padding-left: 13%;
+  }
+  
+  .name {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .name-large {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .image-wrapper {
+    height: 690px;
+    width: 50%;
+  }
+  
+
+  .child-create-new {
+
+  }
+
+  .simple_form new_equipment {
+
+  }
+
+  .mountain {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+    
+  }
+
+  .banenrprofilenew {
+    height: 250px;
+  }
+
+  .top-textnew {
+    color: black;
+    margin-left: 0%;
+    padding-top: 120px;
+    padding-left: 120px;
+    padding-bottom: 120px;
+  }
+
+  .top-h2new{
+    color: black;
+  }
