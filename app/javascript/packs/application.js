@@ -8,7 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("global")
-require("test").start()
+// require("test").start()
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -36,21 +36,21 @@ document.addEventListener('turbolinks:load', () => {
 
 
 
-(function () {
-(document).scroll(function () {
-  var $nav = $(".navbar-lewagon");
-  nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
+// (function () {
+// (document).scroll(function () {
+//   var $nav = $(".navbar-lewagon");
+//   nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+//   });
+// });
 
-(window).load(function () {
-  $(".trigger_popup_fricc").click(function(){
-     $('.hover_bkgr_fricc').show();
-  });
-  $('.hover_bkgr_fricc').click(function(){
-      $('.hover_bkgr_fricc').hide();
-  });
-  $('.popupCloseButton').click(function(){
-      $('.hover_bkgr_fricc').hide();
-  });
-});
+// (window).load(function () {
+//   $(".trigger_popup_fricc").click(function(){
+//      $('.hover_bkgr_fricc').show();
+//   });
+//   $('.hover_bkgr_fricc').click(function(){
+//       $('.hover_bkgr_fricc').hide();
+//   });
+//   $('.popupCloseButton').click(function(){
+//       $('.hover_bkgr_fricc').hide();
+//   });
+// });
