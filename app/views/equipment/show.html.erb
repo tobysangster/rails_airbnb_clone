@@ -47,6 +47,9 @@
       <% if @equipment.user == current_user %>
         <button class="button-show" style="width: 75px;"><%= link_to ' Edit ',  edit_equipment_path(@equipment) %></button>
         <button class="button-show" style="width: 75px;"><%= link_to 'Remove',  equipment_path(@equipment), method: :delete,  data: { confirm: "Are you sure?" }  %></button>
+        <button class="button-show" style="width: 75px;"><%= link_to 'Back',  request.referer.present? ? request.referer : default_path %></button>
+      <% else %>
+        <button class="button-show" style="width: 75px;"><%= link_to 'Back',  request.referer.present? ? request.referer : default_path %></button>
       <% end %>
     </div>
 
