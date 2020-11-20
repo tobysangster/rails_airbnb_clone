@@ -35,12 +35,17 @@
   flex-direction: column;
   input {
     border: none;
+    color: #4e5f6c;
   }
   label {
     background-color: transparent;
     color: #4e5f6c;
     margin-bottom: 0px!important;
   }
+}
+.searchbartext::-webkit-input-placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
 }
 
 .category {
@@ -127,13 +132,6 @@
   color: #4e5f6c!important;
 }
 
-#vertical {
-  background-color:#C80000;
-  color:#C80000;
-  -webkit-transform:rotate(90deg);
-  position:absolute;
-  width:100px;
-  height:2px;
-  left:130px;
-  border:2px;
-}
+
+
+
