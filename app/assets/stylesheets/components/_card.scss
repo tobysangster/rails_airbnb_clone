@@ -13,7 +13,6 @@
     border-radius: 8px !important;
     // align-items: center;
     margin: 20px;
-    line-height: 2px;
     font-family: inherit;
     font-size: 100%;
 }
@@ -21,14 +20,15 @@
     color: grey;
 }
 
-.image img {
+.card-image img {
     height: 168.88px;
     width: 253.33px;
-    border-radius: 8px;
     object-fit: cover;
     // top: 0px !important;
     // left: 0px !important;
     // z-index: 1 !important;
+    border-radius: 8px 8px 0px 0px;
+
 }
 .fa-star {
     color: orange;
@@ -46,11 +46,17 @@
     // font-size: 0.825em;
 }
 .card_price{
+    background-color: white;
     text-align: right;
-    color: green;
+    color: #4e5f6c;
     font-weight: bold;
     font-size: large;
-    // font-size: 0.875em;
+    position: absolute;
+    right: -2px;
+    top: 0px;
+    width: auto;
+    height: 26px;
+    border-radius: 0px 8px 0px 8px;
 }
 
 .info {
@@ -66,3 +72,12 @@
 }
 
 
+.card-trip .card-trip-infos {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+ 

@@ -3,13 +3,12 @@
 <% @equipment.each do |eq| %>
 
   <div class="card">
-      <div class="equipment">
-        <div class="image">
+      <div class="equipment-card">
+        <div class="card-image">
             <%= link_to cl_image_tag(eq.photos.first.key), equipment_path(eq)  %>
         </div>
       <div class="info">
-
-        <div><p class="review"><i class="fas fa-star"></i><% star_rand_num = rand(1..5) %> <%= star_rand_num %><% rand_num = rand(10-500) %><div class="review_number">(<%= rand_num %>)</div></p>
+        <div><p class="review"><i class="fas fa-star"></i><% star_rand_num = rand(1..5) %> <%= star_rand_num %><% rand_num = rand(10-500) %><div class="review_number">(<%= rand_num %>)</p></div>
       </div>
         <p class="title"><%= eq.title %></p>
         <p class="card_price">£<%= eq.price.round %></p>
