@@ -1,7 +1,11 @@
 class EquipmentController < ApplicationController
 
       def index
-        @equipment = Equipment.all
+        if params[:query].present?
+          @equipment = Equipment.search_by_title_and_category(params[:query])
+        else
+          @equipment = Equipment.all
+        end
       end
 
       def show
