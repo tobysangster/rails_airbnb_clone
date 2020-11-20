@@ -40,12 +40,17 @@
   label {
     background-color: transparent;
     color: #4e5f6c;
-    margin-bottom: 0px!important;
+    margin-bottom: 3px !important;
   }
 }
 .searchbartext::-webkit-input-placeholder {
   color: red;
   opacity: 1; /* Firefox */
+}
+
+.searchbartext::-webkit-input-placeholder {
+  color: #4E5F6C;
+  opacity: 1;
 }
 
 .category {
@@ -60,12 +65,12 @@
     height: 23px;
     border: none;
     color: #4e5f6c;
+    margin-left: -3px;
   }
   label {
     background-color: transparent;
     color: #4e5f6c;
     margin-bottom: 0px!important;
-
   }
 }
 
@@ -81,7 +86,7 @@
     border: none;
   }
   label {
-    margin-bottom: 0px !important;
+    margin-bottom: 3px !important;
     background-color: transparent;
     color: #4e5f6c;
   }
@@ -100,7 +105,7 @@
     color: #4e5f6c;
   }
   label {
-    margin-bottom: 0px !important;
+    margin-bottom: 3px !important;
     background-color: transparent;
     color: #4e5f6c;
   }
@@ -112,11 +117,6 @@
   height: 32px;
   padding: 0 !important;
   font-weight: 700;
-}
-
-
-.searchbartext {
-  color: #4e5f6c;
 }
 
 .check-in input {
@@ -132,6 +132,23 @@
   color: #4e5f6c!important;
 }
 
+#vertical {
+  background-color:#C80000;
+  color:#C80000;
+  -webkit-transform:rotate(90deg);
+  position:absolute;
+  width:100px;
+  height:2px;
+  left:130px;
+  border:2px;
+}
 
+#searchbtn {
+  border: none;
+  transition: 0.3s;
+}
 
-
+#searchbtn:hover {
+  background: #4E5F6C!important;
+  color: white!important;
+}
