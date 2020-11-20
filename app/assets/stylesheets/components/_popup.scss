@@ -12,7 +12,8 @@
   }
   
   label{
-    background: skyblue;
+    background: #4e5f6c;
+    border-radius: 4px;
     color: white;
     border-radius: 4px;
   }
@@ -29,15 +30,13 @@
   }
 
 
-
-
-
-
-
-
-
-
-
+.email.expand {
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.16);
+    height: 331px;
+    width: 353px;
+    padding-left: 44px;
+}
 
 
 
@@ -76,7 +75,11 @@
     width: 340px;
   }
   .email {
-    border: 1px solid  #6c757d;
+    border: 1px solid #6c757d;
+    padding-left: 39px;
+    background-color: #6c757d;
+    color: white;
+    padding-left: 39px;
     border-radius: 8px;
     height: 32px;
     overflow: hidden;
@@ -127,12 +130,12 @@
     margin-left: 10px;
   }
   .topbar {
-    background: #4e5f6c;
+    background: white;
     display: flex;
     flex-direction: row;
-    height: 70px;
-    transition: height 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
-    width: 340px;
+    height: 50px;
+    transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: white;
   }
   .avatar-large {
     border-radius: 21px;
@@ -143,7 +146,7 @@
     width: 42px;
   }
   .name-large {
-    color: #efd8ef;
+    color: white;
     font-size: 16px;
     line-height: 70px;
     margin-left: 20px;
@@ -169,14 +172,14 @@
     background: #e7e7e7;
   }
   .line1 {
-    background: #4e5f6c;
+    background: black;
     height: 12px;
     position: absolute;
     transform: translateX(9px) translateY(4px) rotate(45deg);
     width: 2px;
   }
   .line2 {
-    background: #6422EB;
+    background: black;
     height: 12px;
     position: absolute;
     transform: translateX(9px) translateY(4px) rotate(-45deg);
@@ -224,6 +227,7 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.16);
     height: 360px;
     width: 360px;
+    background-color: white;
   }
   .expand .from {
     opacity: 0;
