@@ -1,7 +1,7 @@
 <%time = current_user.created_at %>
 <%time = time.strftime("%B %Y") %>
 <div class="main-page">
-   <div class="bannerprofile" style="background-color:#4e5f6c">
+   <div class="bannerprofile" style="background-image: url('https://images.unsplash.com/photo-1494783435443-c15feee0a80a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80')">
 </div>
 <div class="top-text">
   <h1>Hi there,</h1>
@@ -16,7 +16,7 @@
         <p class="time">Joined <%= time %></p>
         <p>Change password here</p>
          
-        <a class="btn btn-secondary"<%= link_to "List new equipment", new_equipment_path %>
+        <%= link_to "List new equipment", new_equipment_path, class: "btn btn-secondary" %>
 
       </div>
       <div class="cardbox1-right">
