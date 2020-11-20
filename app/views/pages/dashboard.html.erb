@@ -15,8 +15,8 @@
         <h4 class="page-h2"><%= current_user.email%></h4>
         <p class="time">Joined <%= time %></p>
         <p>Change password here</p>
-        <a class="btn btn-secondary" href="<%= link_to "List new equipment", new_equipment_path %>
-        <p><button><%= link_to "List new equipment", new_equipment_path %></button></p>
+         
+        <a class="btn btn-secondary"<%= link_to "List new equipment", new_equipment_path %>
 
       </div>
       <div class="cardbox1-right">
@@ -60,10 +60,8 @@
           from <%= booking.start_date %>
           to <%= booking.end_date %>
         </div>
-        <a class="btn btn-secondary" href="<%= link_to "Edit booking", new_equipment_path %>
-        <button><%= link_to 'Edit booking',  edit_equipment_booking_path(booking.equipment,booking) %></button>
-        <a class="btn btn-secondary" href="<%= link_to "Cancel booking", new_equipment_path %>
-        <button><%= link_to 'Remove booking',  equipment_booking_path(booking.equipment,booking), method: :delete,  data: { confirm: "Are you sure?" }%></button>
+        <%= link_to 'Edit booking',  edit_equipment_booking_path(booking.equipment, booking), class: "btn btn-secondary"%>
+        <%= link_to 'Cancel booking',  booking_path(booking), method: :delete,  data: { confirm: "Are you sure?" }, class: "btn btn-secondary"%>
       <% end %>
       
       <h3 class="page-h2">Bookings for you</h3>

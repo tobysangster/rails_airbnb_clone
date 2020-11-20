@@ -11,12 +11,12 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get '/dashboard', to: 'pages#dashboard'
-
+  resources :bookings, only: [:destroy]
   # root to: "equipment#index"
   resources :equipment do
-    resources :bookings, only: [:new, :create, :update, :edit, :destroy]
+    resources :bookings, only: [:new, :create, :update, :edit]
     # resources :reviews, only: [:create]
   end
-  # resources :doses, only: [:destroy]
+  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
