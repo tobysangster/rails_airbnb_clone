@@ -13,9 +13,7 @@ a {
     align-items: center;
     color: white;
     font-weight: bold;
-    // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     border-radius: 5px;
-    // box-shadow: 0 0 15px rgba(0,0,0,0.2);
     flex-direction: column;
     font-size: 30px;
   }
@@ -24,7 +22,6 @@ a {
     overflow: hidden;
     height: 550px;
     background: white;
-    // box-shadow: 0 0 15px rgba(0,0,0,0.2);
     display: flex;
     align-items: center;
     padding-left: 50px;
@@ -130,3 +127,84 @@ a {
 }
 /* Popup box BEGIN */
 
+
+
+
+.show-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  width: 95%;
+  margin: auto;
+}
+
+.card1show {
+  background-color: white;
+  height: 600px;
+  width: 65%;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-left: 75px;
+  margin-right: 25px;
+  margin-top: 25px;
+  display: flex;
+  padding: 8px;
+  padding-top: 16px;
+
+}
+
+.card2show {
+  background-color: white;
+  height: 100%;
+  padding-top: 130px;
+  width: 30%;
+  border-radius: 16px;
+  text-align: center;
+  margin-right: 75px;
+  margin-left: 25px;
+  margin-top: 25px;
+  padding-top: 0px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+
+.cardbox1-leftshow {
+
+  height: 90%;
+  margin: 16px;
+  padding-top: 24px;
+  text-align: center;
+  margin-left: 32px;
+  margin: auto;
+
+  
+}
+
+.cardbox1-rightshow {
+  width: 70%;
+  height: 90%;
+  margin: 16px;
+  padding-top: 24px;
+  padding-right: 16px;
+}
+
+.showphoto a img {
+  border-radius: 16px;
+}
+
+.email {
+  margin: auto;
+  margin-top: 24px;
+  padding-left: 13%;
+}
+
+.name {
+  text-align: center;
+  margin: auto;
+}
+
+.name-large {
+  text-align: center;
+  margin: auto;
+}
