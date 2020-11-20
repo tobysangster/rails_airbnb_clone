@@ -8,6 +8,7 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("global")
+require("test").start()
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
@@ -24,7 +25,7 @@ require("global")
 
 // External imports
 import "bootstrap";
-
+import "controllers"
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -42,3 +43,14 @@ document.addEventListener('turbolinks:load', () => {
   });
 });
 
+(window).load(function () {
+  $(".trigger_popup_fricc").click(function(){
+     $('.hover_bkgr_fricc').show();
+  });
+  $('.hover_bkgr_fricc').click(function(){
+      $('.hover_bkgr_fricc').hide();
+  });
+  $('.popupCloseButton').click(function(){
+      $('.hover_bkgr_fricc').hide();
+  });
+});
