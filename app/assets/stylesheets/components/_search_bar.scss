@@ -35,12 +35,18 @@
   flex-direction: column;
   input {
     border: none;
+    color: #4e5f6c;
   }
   label {
     background-color: transparent;
     color: #4e5f6c;
-    margin-bottom: 0px!important;
+    margin-bottom: 3px !important;
   }
+}
+
+.searchbartext::-webkit-input-placeholder {
+  color: #4E5F6C;
+  opacity: 1;
 }
 
 .category {
@@ -55,12 +61,12 @@
     height: 23px;
     border: none;
     color: #4e5f6c;
+    margin-left: -3px;
   }
   label {
     background-color: transparent;
     color: #4e5f6c;
     margin-bottom: 0px!important;
-
   }
 }
 
@@ -76,7 +82,7 @@
     border: none;
   }
   label {
-    margin-bottom: 0px !important;
+    margin-bottom: 3px !important;
     background-color: transparent;
     color: #4e5f6c;
   }
@@ -95,7 +101,7 @@
     color: #4e5f6c;
   }
   label {
-    margin-bottom: 0px !important;
+    margin-bottom: 3px !important;
     background-color: transparent;
     color: #4e5f6c;
   }
@@ -107,11 +113,6 @@
   height: 32px;
   padding: 0 !important;
   font-weight: 700;
-}
-
-
-.searchbartext {
-  color: #4e5f6c;
 }
 
 .check-in input {
@@ -136,4 +137,14 @@
   height:2px;
   left:130px;
   border:2px;
+}
+
+#searchbtn {
+  border: none;
+  transition: 0.3s;
+}
+
+#searchbtn:hover {
+  background: #4E5F6C!important;
+  color: white!important;
 }
